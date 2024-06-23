@@ -1,0 +1,13 @@
+env: dev
+log:
+    level: 4
+    file_path: ./matchmaking.log
+    format: string
+
+http:
+    main:
+        addr: 0.0.0.0:8080
+
+# match setting
+match:
+    group_size: 10
