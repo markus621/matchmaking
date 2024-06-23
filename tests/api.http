@@ -1,0 +1,10 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "user{{$random.integer()}}",
+  "skill": {{$random.float(0, 100)}},
+  "latency": {{$random.float(1, 10)}}
+}
+
+###
